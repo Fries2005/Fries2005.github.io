@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content = "Anand Vinod">
-    <meta name="description" content = "This page contains all the information associated with my Computer Science skills and projects">
-
-
+    <meta name="author" content="Anand Vinod">
+    <meta name="description" content="This page contains all the information associated with my Computer Science skills and projects">
     <title>Anand Vinod: Personal Website</title>
     <link rel="icon" href="images/weblogo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
@@ -19,29 +17,116 @@
         <div class="container">
 
             <nav>
-                <img src="images/logo.png" class = "logo">
+                <img src="images/logo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
 
             <img src="images/dk.png" class="me">
             <div class="header-text">
-                <p> CS/ML Student @ UMD</p>
+                <p> CS + Math Student @ UMD</p>
                 <h1> Thank you to my <span>Day Ones.</span></h1>
             </div>
         </div>
     </div>
 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="pfp_image">
+                    <img src="images/DK_Strong.png">
+                    
+                </div>
 
-    <div id="about"> 
+                <div class="info_col">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p>
+                        Here's the thing. You said a "wyvern is a dragon." Is it in the same family? Yes. No one's arguing that. As someone who is a 1k MMR feeder who studies dragons, I am telling you, specifically, in dota, no one calls wyverns dragons. If you want to be "specific" like you said, then you shouldn't either. They're not the same thing. If you're saying "dragon family" you're referring to the taxonomic grouping of Varanidae, which includes things from wyverns to eldwurms to drakes. So your reasoning for calling a wyvern a dragon is because random people "call the flying lizards dragons?" Let's get gyarados and charizards in there, then, too. Also, calling someone a noob or a feeder? It's not one or the other, that's not how taxonomy works. They're both. A wyvern is a wyvern and a member of the dragon family. But that's not what you said. You said a wyvern is a dragon, which is not true unless you're okay with calling all members of the dragon family dragons, which means you'd call eldwurms, drakes, and other flying lizards dragons, too. Which you said you don't. It's okay to just admit you're wrong, you know?
+                    </p>
 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('languages')"> Languages </p>
+                        <p class="tab-links" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('hobbies')"> Hobbies </p>
+                    </div>
 
+                    <div class="tab-contents active-tab" id="languages">
+                        <ul>
+                            <li> Java </li>
+                            <li> C </li>
+                            <li> OCaml </li>
+                            <li> Rust </li>
+                            <li> Python </li>
+                            <li> HTML </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li> Pandas </li>
+                            <li> Pygame </li>
+                            <li> TensorFlow </li>
+                            <li> Keras </li>
+                            <li> NumPy </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li> Chess </li>
+                            <li> Guitar </li>
+                            <li> Tennis </li>
+                            <li> Scuba Diving </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"> Projects </h1>
+            <div class="project-list">
+                <a href="https://devpost.com/software/just-dance-dance-revolution?ref_content=user-portfolio&ref_feature=in_progress" target="_blank">
+                    <div class="project">
+                        <img src="images/jddr.png" alt="youtube.com">
+                        <div class="layer">
+                            <h3> Just Dance Dance Revolution</h3>
+                            <p> This project was submitted to HooHacks 2024.
+                                The projcets allows users to overlay a dance from youtube onto their video feed for learning!</p>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://devpost.com/software/connective?ref_content=user-portfolio&ref_feature=in_progress" target="_blank">
+                    <div class="project">
+                        <img src="images/connective.png">
+                        <div class="layer">
+                            <h3> Connective</h3>
+                            <p> Lowkey I was shitting my pants the entire time. I forgot what happened in this John typa.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://devpost.com/software/helpinghands-myl8ox" target="_blank">
+                    <div class="project">
+                        <img src="images/helpinghands.png">
+                        <div class="layer">
+                            <h3> Helping Hands</h3>
+                            <p> Ts goofy asl. Basically you swing yo arms around and shi starts moving on ur screen.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
