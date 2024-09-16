@@ -10,25 +10,35 @@
     <title>Anand Vinod: Personal Website</title>
     <link rel="icon" href="images/weblogo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a7409c3f15.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="header">
         <div class="container">
-
             <nav>
                 <img src="images/logo.png" class="logo">
+                
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
+            
             <img src="images/anandjohn.png" class="me">
+                
+                    
+                    
+                
+            
+            
             <div class="header-text">
                 <p> <span> CS + Math Student @ UMD</span></p> 
                 <h1> Thank you to my <span>Supporters.</span></h1>
+                
             </div>
         </div>
     </div>
@@ -122,6 +132,7 @@
                     </div>
                 </a>
 
+                
                 <a href="https://devpost.com/software/helpinghands-myl8ox" target="_blank">
                     <div class="project">
                         <img src="images/helpinghands.png">
@@ -135,11 +146,68 @@
                         </div>
                     </div>
                 </a>
+
+                
+            </div>
+        </div>
+
+        <div id="contact">
+            
+            <div class="container">
+                <h1 class="sub-title"> Contact Me</h1>
+                <div class="row">
+                    <div class="contact-left">
+                        <div class="media-container">
+                            <img src="images/icons8-send-50.png">
+                            <p> anandvinod186@gmail.com</p>
+                        </div>
+                        
+                        <div class="media-container">
+                            <img src="images/icons8-phone-50.png">
+                            <p>703-870-4693</p>
+                        </div>
+                        
+                        <div class="icons">
+                            <a href="https://github.com/Fries2005" target="_blank" rel="noopener noreferrer"><img src="images/icons8-github-50 (1).png"></a>
+                            <a href="https://www.linkedin.com/in/anand-vinod/" target="_blank" rel="noopener noreferrer"> <img src="images/icons8-linkedin-50.png"> </a>
+                            <a href="https://www.instagram.com/avinod997" target="_blank" rel="noopener noreferrer"> <img src ="images/icons8-instagram-50.png"> </a>
+                        </div>
+                        <a href="resources/ResumeAnandVinod.pdf" download class="btn">Résumé</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name ="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn"> Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="scripts.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzuFCxDsN4PEFXU9UfPZzia7BHHOt620LVfN6D0yy6Cdzj7EPwNnYMwytkyb17Ery8Rpg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent sucessfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>
