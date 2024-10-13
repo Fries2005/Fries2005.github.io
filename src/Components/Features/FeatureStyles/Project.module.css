@@ -1,0 +1,128 @@
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #272727;
+    width: 100%;
+    max-width: 750px; 
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(155, 209, 250, 0.5);
+    color: white;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: center; 
+}
+
+
+.projectContainer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(155, 209, 250, 0.7);
+}
+
+.topContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.projectImage {
+    width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projectImage:hover {
+    transform: scale(1.05);
+}
+
+.topRightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 300px;
+    margin-left: -40px;
+}
+
+.projectTitle {
+    font-size: 36px;
+    margin: 0;
+    color: #9BD1FA;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 10px 0; 
+}
+
+.tags li {
+    background-color: transparent; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font-size: 14px; 
+    color: #ffffff; 
+    margin: 5px; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    white-space: nowrap; 
+    transition: all 0.3s ease; 
+}
+
+
+.tags li:hover {
+    background-color: #d3649f; 
+    color: white; 
+    border-color: #d3649f; 
+    transform: scale(1.05); 
+    cursor: default;
+}
+
+.projectButton {
+    margin-top: 10px;
+    background-color: #33c1ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.projectButton:hover {
+    background-color: #33c2ff84;
+}
+
+.projectDescription {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+@media (max-width: 768px) {
+    .topContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectImage {
+        max-width: 100%; 
+    }
+
+    .topRightContainer {
+        width: 100%; 
+        margin: 0;
+    }
+}

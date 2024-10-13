@@ -1,0 +1,38 @@
+.landingPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 300px;
+    color: white;
+    margin-top: 150px;
+}
+
+.landingAnimation {
+    width: 55vh;
+    height: 55vh; 
+}
+
+.landingText{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 800px;
+}
+
+.landingText h1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.landingText p {
+    font-size: 32px;
+    margin: 20px 0 0 0; 
+}
+
+.landingText p span {
+    background: linear-gradient(90deg, #9BD1FA, #D3649F);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+}

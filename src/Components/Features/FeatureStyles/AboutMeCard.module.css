@@ -1,0 +1,49 @@
+.aboutMeCard {
+    display: flex;         
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;    
+}
+
+.profileImage {
+    position: relative;
+    width: 400px;            
+    height: 400px;          
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 10px #9BD1FA;
+    background-color: #5c8c8e20; 
+    display: flex;          
+    justify-content: center;
+    align-items: center;  
+}
+
+.image {
+    width: 90%;         
+    height: 90%;         
+    display: block;         
+    border-radius: 50%;      
+    object-fit: cover;       
+    margin: 5%;              
+}
+
+.icons {
+    display: flex;       
+    justify-content: center; 
+    gap: 30px;           
+    padding-top: 30px;      
+}
+
+.icons a img {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.icons img:hover{
+    filter:invert(100%);
+    scale: 1.05;
+    transform: translateY(-5px);
+}

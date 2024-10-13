@@ -1,0 +1,31 @@
+.projects{
+    margin-top: 400px;
+}
+
+.title {
+    font-size: 100px; 
+    text-align: center;                           
+    text-decoration: none; 
+    background: linear-gradient(90deg, #9BD1FA 40%, #D3649F 65%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 4vw;
+    margin-top: 100px;
+    justify-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+@media (max-width: 1625px) {
+    .projectsContainer {
+        grid-template-columns: 1fr; 
+    }
+}
+

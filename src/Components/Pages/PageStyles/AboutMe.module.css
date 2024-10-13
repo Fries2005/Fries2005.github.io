@@ -1,0 +1,72 @@
+
+
+.aboutMe .title {
+    font-size: 120px; 
+    text-align: center;                           
+    margin: 0; 
+    margin-top: 5vh; 
+    margin-bottom: 5vh; 
+    text-decoration: none; 
+    background: linear-gradient(90deg, #9BD1FA, #D3649F); 
+    background-clip: text; 
+    color: transparent; 
+    padding-bottom: 10px; 
+}
+.aboutMe {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    color: white;
+    padding: 40px;
+    margin-top: 220px;
+    /* background-color: #434343;
+    border-radius:20px;
+    margin-left: 200px;
+    margin-right: 200px; */
+}
+.aboutContainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    padding: 5vw; 
+}
+
+.aboutContainer .textContainer {
+    width: 100%; 
+    max-width: 900px; 
+    padding: 0vw; 
+}
+
+span {
+    color: #9BD1FA;
+}
+
+.aboutContainer .textContainer p {
+    font-size: 4vw; 
+    line-height: 1.5; 
+}
+
+.aboutMeCard {
+    width: 90%; 
+    max-width: 500px; 
+}
+
+
+@media (min-width: 1245px) {
+    .aboutContainer {
+        flex-direction: row; 
+        justify-content: space-between;
+        height: 20vh; 
+    }
+
+    .aboutContainer .textContainer {
+        padding-bottom: 200px; 
+    }
+
+    .aboutContainer .textContainer p {
+        font-size: 22px; 
+    }
+}

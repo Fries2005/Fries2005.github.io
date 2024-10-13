@@ -1,0 +1,14 @@
+.contactContainer{
+    margin-top: 350px;
+    width: 100%;
+}
+
+.title {
+    font-size: 100px; 
+    text-align: center;                           
+    text-decoration: none; 
+    background: linear-gradient(90deg, #9BD1FA 40%, #D3649F 65%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+}
