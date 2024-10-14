@@ -16,11 +16,10 @@
 .projectsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 4vw;
+    gap: 2vw;
     margin-top: 100px;
     justify-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
+
 }
 
 @media (max-width: 1625px) {
